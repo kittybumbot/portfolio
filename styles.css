@@ -1,15 +1,15 @@
 /* ==========================================================
    Kathryn Hussein — Learning Design Portfolio
-   Palette: deep teal + gold on warm cream
+   Palette: deep blue-teal + gold on warm cream
    All text/background pairs below meet WCAG 2.2 AA (most AAA)
    ========================================================== */
 
 :root {
   /* Core palette */
-  --teal-900: #062F33;   /* deepest, hero + footer backgrounds */
-  --teal-700: #0B4A50;   /* primary brand, headings on cream (11.6:1) */
-  --teal-500: #12707A;   /* accents, links on cream (5.6:1) */
-  --teal-100: #DCEDEC;   /* soft tint panels */
+  --teal-900: #05293A;   /* deepest, hero + footer backgrounds */
+  --teal-700: #0A4560;   /* primary brand, headings on cream (9.6:1) */
+  --teal-500: #136B8A;   /* accents, links on cream (5.6:1) */
+  --teal-100: #DCEAF0;   /* soft tint panels */
   --gold-400: #E0B54A;   /* gold on dark teal (7.9:1 on teal-900) */
   --gold-700: #7A5A00;   /* gold text on cream (6.2:1) */
   --cream:    #FBF7F0;   /* page background */
@@ -127,7 +127,7 @@ a:hover { color: var(--teal-700); }
   display: flex; align-items: center; gap: 12px;
 }
 .eyebrow::before { content: ""; width: 40px; height: 2px; background: var(--gold-400); }
-.hero .lede { font-size: clamp(1.1rem, 2vw, 1.35rem); max-width: 56ch; color: #E9F1F0; }
+.hero .lede { font-size: clamp(1.1rem, 2vw, 1.35rem); max-width: 56ch; color: #E9F0F3; }
 
 .btn-row { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 2rem; }
 .btn {
@@ -216,7 +216,7 @@ section { padding: clamp(56px, 8vw, 96px) 0; }
 /* CTA band */
 .cta-band { background: var(--teal-900); color: var(--cream); text-align: center; }
 .cta-band h2 { color: var(--cream); }
-.cta-band p { margin-left: auto; margin-right: auto; color: #E9F1F0; }
+.cta-band p { margin-left: auto; margin-right: auto; color: #E9F0F3; }
 .cta-band .btn-row { justify-content: center; }
 
 /* ---------- Portfolio page ---------- */
@@ -262,7 +262,7 @@ section { padding: clamp(56px, 8vw, 96px) 0; }
 .note p:last-child { margin-bottom: 0; }
 
 /* ---------- Footer ---------- */
-.site-footer { background: var(--teal-900); color: #CFE0DE; padding: 40px 0; border-top: 3px solid var(--gold-400); }
+.site-footer { background: var(--teal-900); color: #CFDDE4; padding: 40px 0; border-top: 3px solid var(--gold-400); }
 .site-footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; align-items: center; }
 .site-footer a { color: var(--gold-400); }
 .site-footer a:hover { color: var(--cream); }
