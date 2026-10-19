@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio | Kathryn Hussein, Instructional Designer</title>
+  <meta name="description" content="eLearning and SCORM projects by instructional designer Kathryn Hussein.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">Kathryn <span>Hussein</span></a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">About Me</a></li>
+          <li><a href="portfolio.html" aria-current="page">Portfolio</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero page-hero" aria-labelledby="page-title">
+      <div class="wrap">
+        <p class="eyebrow">Selected work</p>
+        <h1 id="page-title">Learning <em>in action.</em></h1>
+        <p class="lede">Interactive eLearning modules, onboarding courses, and performance support. Each project opens in your browser so you can experience it the way a learner would.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="projects-title">
+      <div class="wrap">
+        <h2 id="projects-title" class="visually-hidden">Projects</h2>
+
+        <div role="group" aria-label="Filter projects by type">
+          <ul class="filters">
+            <li><button type="button" data-filter="all" aria-pressed="true">All</button></li>
+            <li><button type="button" data-filter="elearning" aria-pressed="false">eLearning</button></li>
+            <li><button type="button" data-filter="onboarding" aria-pressed="false">Onboarding</button></li>
+            <li><button type="button" data-filter="job-aid" aria-pressed="false">Job Aids</button></li>
+            <li><button type="button" data-filter="immersive" aria-pressed="false">Immersive</button></li>
+          </ul>
+        </div>
+        <p id="filter-status" class="visually-hidden" aria-live="polite"></p>
+
+        <div class="projects">
+          <!-- PROJECT CARD TEMPLATE: duplicate one <article> per project.
+               Set data-type to elearning, onboarding, or job-aid.
+               Point the button at your exported SCORM/HTML5 launch file. -->
+          <article class="project" data-type="onboarding">
+            <div class="thumb" aria-hidden="true">Onboarding course</div>
+            <div class="body">
+              <h3>Emergency Procurement Onboarding</h3>
+              <p>A self-paced onboarding course that prepares new administrative staff to approve emergency purchases accurately and confidently.</p>
+              <dl class="meta">
+                <dt>Tool:</dt><dd>EasyGenerator</dd>
+                <dt>Length:</dt><dd>~20 min</dd>
+              </dl>
+              <ul class="tags" aria-label="Skills">
+                <li>Needs analysis</li><li>Scenario design</li><li>SCORM</li>
+              </ul>
+              <a class="btn btn-teal" href="projects/procurement-onboarding/index.html">Launch module<span class="visually-hidden">: Emergency Procurement Onboarding</span></a>
+            </div>
+          </article>
+
+          <article class="project" data-type="elearning">
+            <div class="thumb" aria-hidden="true">eLearning module</div>
+            <div class="body">
+              <h3>Project Title Here</h3>
+              <p>One or two sentences on the performance problem, the audience, and the design approach you took.</p>
+              <dl class="meta">
+                <dt>Tool:</dt><dd>Articulate Storyline</dd>
+                <dt>Length:</dt><dd>~15 min</dd>
+              </dl>
+              <ul class="tags" aria-label="Skills">
+                <li>Learning theory</li><li>Interactivity</li>
+              </ul>
+              <a class="btn btn-teal" href="projects/project-two/index.html">Launch module<span class="visually-hidden">: Project Title Here</span></a>
+            </div>
+          </article>
+
+          <article class="project" data-type="job-aid">
+            <div class="thumb" aria-hidden="true">Job aid</div>
+            <div class="body">
+              <h3>Job Aid Title Here</h3>
+              <p>Describe the task it supports and how it reduces errors or time on task.</p>
+              <dl class="meta">
+                <dt>Tool:</dt><dd>Figma / PDF</dd>
+                <dt>Format:</dt><dd>Quick reference</dd>
+              </dl>
+              <ul class="tags" aria-label="Skills">
+                <li>Performance support</li><li>Visual design</li>
+              </ul>
+              <a class="btn btn-teal" href="projects/job-aid/index.html">View job aid<span class="visually-hidden">: Job Aid Title Here</span></a>
+            </div>
+          </article>
+
+          <article class="project" data-type="immersive">
+            <div class="thumb" aria-hidden="true">Immersive VR</div>
+            <div class="body">
+              <h3>Frame VR Learning Environment</h3>
+              <p>An immersive, browser-based 3D learning space. Details and a walkthrough link are coming soon.</p>
+              <dl class="meta">
+                <dt>Tool:</dt><dd>Frame VR</dd>
+                <dt>Status:</dt><dd>In development</dd>
+              </dl>
+              <ul class="tags" aria-label="Skills">
+                <li>Immersive learning</li><li>Experiential design</li>
+              </ul>
+              <!-- When ready, replace this line with:
+                   <a class="btn btn-teal" href="YOUR-FRAME-URL">Enter the space<span class="visually-hidden">: Frame VR Learning Environment (opens Frame VR)</span></a> -->
+              <p class="meta"><strong>Coming soon</strong></p>
+            </div>
+          </article>
+        </div>
+
+        <aside class="note" aria-labelledby="note-title">
+          <h2 id="note-title">About these modules</h2>
+          <p>Modules are published as HTML5 so they run directly in the browser without a learning management system. Progress and quiz scores aren't saved between visits. If you'd like to see a module running inside an LMS with full tracking, I'm happy to share a demo.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; 2026 Kathryn Hussein</p>
+      <ul>
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    // Accessible project filter: toggle buttons + live status announcement
+    (function () {
+      const buttons = document.querySelectorAll('.filters button');
+      const projects = document.querySelectorAll('.project');
+      const status = document.getElementById('filter-status');
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const filter = btn.dataset.filter;
+          buttons.forEach(b => b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'));
+          let shown = 0;
+          projects.forEach(p => {
+            const match = filter === 'all' || p.dataset.type === filter;
+            p.hidden = !match;
+            if (match) shown++;
+          });
+          status.textContent = 'Showing ' + shown + ' project' + (shown === 1 ? '' : 's') + '.';
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
